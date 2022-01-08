@@ -1,0 +1,13 @@
+.information{
+    background-color: #1F223C;
+    padding: 10px 0px;
+}
+.imgcontainer{
+    overflow: hidden;
+}
+.serviceimg{
+    transition: all 0.3s;
+}
+.serviceimg:hover{
+   transform: scale(1.1);
+}

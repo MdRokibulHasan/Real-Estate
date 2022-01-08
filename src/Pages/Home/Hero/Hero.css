@@ -1,0 +1,15 @@
+.background{
+    background-image: url('../../../images/heroimg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.bg{
+    height: 500px;
+    color: rgb(255, 255, 255) !important;
+}
+.banner-img img{
+    width: 100%;
+    
+}

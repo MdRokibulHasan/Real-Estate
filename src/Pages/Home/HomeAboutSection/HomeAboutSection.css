@@ -1,0 +1,15 @@
+.text-color{
+    color: gray;
+}
+.about-home-img{
+    transition: all 0.3s;
+    width: 100% !important;
+}
+.about-home-img img{
+    width: 80% !important;
+}
+
+
+.about-home-img:hover{
+    transform: scale(1.1);
+}
