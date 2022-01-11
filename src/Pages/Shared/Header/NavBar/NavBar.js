@@ -38,8 +38,8 @@ const NavBar = () => {
                 !user.email && <Nav.Link as={Link} to="" onClick={handleOpenl} className="menu-color mx-lg-4 fs-5">LOGIN</Nav.Link>
               }
               {
-                !user.email && <Nav.Link as={Link} to="" className="menu-color mx-lg-4 fs-5"  onClick={handleOpenr}>
-                REGISTER
+                !user.email && <Nav.Link as={Link} to="" className="menu-color mx-lg-4 fs-5" onClick={handleOpenr}>
+                  REGISTER
                 </Nav.Link>
               }
               <NavModal
@@ -51,44 +51,44 @@ const NavBar = () => {
                 openl={openl}
                 handleClosel={handleClosel}
                 handleOpenl={handleOpenl}
-               
+
               ></LoginModal>
               {
                 user.email && <Nav.Link as={Link} to="" className="menu-color mx-lg-4 fs-5">
-                 <div className="a">
-                  <div className="d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <div className="a">
+                    <div className="d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
 
-                    {
-                      user.photoURL ? <img className="userImg" src={user.photoURL} alt="" /> : <div className="fs-5 rounded-circle border" style={{ width: '35px', height: '35px' }}>
-                        <i class="fas fa-user text-light"></i>
-                      </div>
-                    }
-                  </div>
+                      {
+                        user.photoURL ? <img className="userImg" src={user.photoURL} alt="" /> : <div className="fs-5 rounded-circle border" style={{ width: '35px', height: '35px' }}>
+                          <i class="fas fa-user text-light"></i>
+                        </div>
+                      }
+                    </div>
 
-                  <div className="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div className="offcanvas-header">
-                      <h5 id="offcanvasRightLabel" className='text-light'>Profile</h5>
-                      <button type="button" className="btn-close text-reset btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div className="offcanvas-body">
-                      <div className="a">
-                        <Link to="/giveonrent" className="fs-5 border py-1 d-inline-block mb-3 profile-menu-box">
-                        <i class="fas fa-laptop-house"></i><p className="m-0">Make A Rent Post</p>
-                        </Link> <br />
-                        <Link to="/dashboard" className="fs-5 border py-1 d-inline-block mb-3 profile-menu-box">
-                          <i className="fas fa-th-large"></i><p className="m-0">Dashboard</p>
-                        </Link>
-                        <br />
-                        <Link onClick={logout} to="/" className="fs-5 border py-1 d-inline-block mb-3 profile-menu-box">
-                          <i className="fas fa-sign-out-alt"></i><p className="m-0">Log Out</p>
-                        </Link>
+                    <div className="offcanvas offcanvas-end text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div className="offcanvas-header">
+                        <h5 id="offcanvasRightLabel" className='text-light'>Profile</h5>
+                        <button type="button" className="btn-close text-reset btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div className="offcanvas-body">
+                        <div className="a">
+                          <Link to="/giveonrent" className="fs-5 border py-1 d-inline-block mb-3 profile-menu-box">
+                            <i class="fas fa-laptop-house"></i><p className="m-0">Make A Rent Post</p>
+                          </Link> <br />
+                          <Link to="/dashboard" className="fs-5 border py-1 d-inline-block mb-3 profile-menu-box">
+                            <i className="fas fa-th-large"></i><p className="m-0">Dashboard</p>
+                          </Link>
+                          <br />
+                          <Link onClick={logout} to="/" className="fs-5 border py-1 d-inline-block mb-3 profile-menu-box">
+                            <i className="fas fa-sign-out-alt"></i><p className="m-0">Log Out</p>
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
                 </Nav.Link>
-                
-               
+
+
               }
 
 
